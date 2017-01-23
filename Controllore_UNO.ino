@@ -26,7 +26,7 @@ const int DHpin = 8;
 byte dat [5];
 
 //execution time
-int i =0;
+unsigned int i =0;
 
 //Sensore interno
 void internal_pression_Handling(){
@@ -117,5 +117,6 @@ void loop() {
   Serial.print(';');
   Serial.println(i);
   i++;
+  if(i==0) Serial.println("overflow della variabile temporale, spegnere e riaccendere #TOBEFIXEDIN 0.8");
   delay(10000); //ogni 10 secondi deve lavorare
 }
