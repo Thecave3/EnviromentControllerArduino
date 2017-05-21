@@ -2,8 +2,8 @@
  * Controllore camera pulita
  *
  * Copyright 2016 Andrea Lacava <thecave003@gmail.com>
- * Contact me for question/ suggestions etc.
- * Version 0.7 RELEASE CANDIDATE
+ * Contact me for question/ suggestions etc. at http://www.andrealacava.com/
+ * Version 0.8 RELEASE CANDIDATE
  */
 
 //Sensore interno pressione costants
@@ -26,7 +26,7 @@ const int DHpin = 8;
 byte dat [5];
 
 //execution time
-unsigned int i =0;
+unsigned long i =0;
 
 //Sensore interno
 void internal_pression_Handling(){
@@ -117,6 +117,5 @@ void loop() {
   Serial.print(';');
   Serial.println(i);
   i++;
-  if(i==0) Serial.println("overflow della variabile temporale, spegnere e riaccendere #TOBEFIXEDIN 0.8");
   delay(10000); //ogni 10 secondi deve lavorare
 }
