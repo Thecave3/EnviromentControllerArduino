@@ -3,9 +3,9 @@ Another enviroment controller code for Arduino UNO.
 
 Controllore camera pulita
 
-Version 0.7 RELEASE CANDIDATE
+Version 0.8 RELEASE CANDIDATE
 
-##What is?
+## What is?
 
 Rilevatore di pressione interna ed ambientale, temperatura e umidità
 
